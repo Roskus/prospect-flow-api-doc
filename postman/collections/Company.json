@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "1c59618f-f19d-4967-a939-bb8f1c86a2bb",
+		"name": "Company",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14850943-1c59618f-f19d-4967-a939-bb8f1c86a2bb"
+	},
+	"item": [
+		{
+			"name": "/company",
+			"id": "47cce081-9502-48db-a726-73915a601060",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{API_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/company",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"company"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
