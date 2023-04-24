@@ -36,6 +36,79 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "/company/{{id}}",
+			"id": "a650b283-64ab-46aa-aa47-e0423e873372",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{API_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/company/3",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"company",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/company/{{id}}",
+			"id": "76b7d2cc-12fc-47fb-820a-e0d2ecbd41e0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{API_TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ROSKUS\",\n    \"business_name\": \"ROSKUS OU\",\n    \"vat\": null,\n    \"logo\": null,\n    \"signature_html\": null,\n    \"phone\": \"281.652.3567\",\n    \"email\": \"saige04@moore.com\",\n    \"country_id\": \"mx\",\n    \"province\": null,\n    \"city\": null,\n    \"street\": null,\n    \"zipcode\": null,\n    \"currency\": \"mxn\",\n    \"website\": \"https://roskus.com\",\n    \"created_at\": \"2023-03-03T22:28:34.000000Z\",\n    \"updated_at\": \"2023-04-04T22:55:17.000000Z\",\n    \"status\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/company/1",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"company",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
